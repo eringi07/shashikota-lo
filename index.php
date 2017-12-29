@@ -10,23 +10,12 @@
     //fetchした時点で、文字列型に変わってしまう　→　計算に使えなくなってしまう
     $maxid = intval($maxid['MAX(id)']);
     if(isset($_POST['liked_button'])){
-        try{
-          include 'dbc.php';
-        } catch (PDOException $e) {
-          exit('データベース接続失敗。'.$e ->getMessage());
-        }
         $stmt = $pdo -> prepare("INSERT INTO likes(liked_id) VALUES(:liked_id_number)");//登録準備
         $stmt -> bindValue(':liked_id_number', $_POST['liked_id'], PDO::PARAM_INT);//登録する文字の型を固定
         $stmt -> execute();//データベースの登録を実行
-        $pdo = NULL;//データベースの接続を解除
     }
 
     for($id=$maxid;$id>=1;$id--){
-          try{
-            include 'dbc.php';
-          } catch (PDOException $e) {
-            exit('データベース接続失敗。'.$e ->getMessage());
-          }
           $stmt = $pdo -> prepare('SELECT * FROM kotae WHERE id=:id');
           $stmt -> bindValue(':id', $id, PDO::PARAM_INT);
           $stmt -> execute();
@@ -39,8 +28,8 @@
           echo '<pre>';
           var_dump($count_liked["$id"]);
           echo '</pre>';
-
     }
+    $pdo = null;
     include 'header.php';
 ?>
         <div class="box2">
