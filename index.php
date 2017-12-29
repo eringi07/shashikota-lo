@@ -4,27 +4,27 @@
     ini_set('display_errors', "On");
     include 'dbc.php';
     include 'functions.php';
-    $stmt = $pdo -> prepare("SELECT MAX(id) FROM kotae");
-    $stmt -> execute();
-    $maxid = $stmt -> fetch();
+    $stmt = $pdo->prepare("SELECT MAX(id) FROM kotae");
+    $stmt->execute();
+    $maxid = $stmt->fetch();
     //fetchした時点で、文字列型に変わってしまう　→　計算に使えなくなってしまう
     $maxid = intval($maxid['MAX(id)']);
     if(isset($_POST['liked_button'])){
-        $stmt = $pdo -> prepare("INSERT INTO likes(liked_id) VALUES(:liked_id_number)");//登録準備
-        $stmt -> bindValue(':liked_id_number', $_POST['liked_id'], PDO::PARAM_INT);//登録する文字の型を固定
-        $stmt -> execute();//データベースの登録を実行
+        $stmt = $pdo->prepare("INSERT INTO likes(liked_id) VALUES(:liked_id_number)");//登録準備
+        $stmt->bindValue(':liked_id_number', $_POST['liked_id'], PDO::PARAM_INT);//登録する文字の型を固定
+        $stmt->execute();//データベースの登録を実行
     }
 
     for($id=$maxid;$id>=1;$id--){
-          $stmt = $pdo -> prepare('SELECT * FROM kotae WHERE id=:id');
-          $stmt -> bindValue(':id', $id, PDO::PARAM_INT);
-          $stmt -> execute();
-          $odai["$id"] = $stmt -> fetch();
+          $stmt = $pdo->prepare('SELECT * FROM kotae WHERE id=:id');
+          $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+          $stmt->execute();
+          $odai["$id"] = $stmt->fetch();
 
-          $stmt = $pdo -> prepare('SELECT COUNT(id) FROM likes WHERE liked_id=:id');
-          $stmt -> bindValue(':id', $id, PDO::PARAM_INT);
-          $stmt -> execute();
-          $count_liked["$id"] = $stmt -> fetch();
+          $stmt = $pdo->prepare('SELECT COUNT(id) FROM likes WHERE liked_id=:id');
+          $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+          $stmt->execute();
+          $count_liked["$id"] = $stmt->fetch();
           echo '<pre>';
           var_dump($count_liked["$id"]);
           echo '</pre>';
