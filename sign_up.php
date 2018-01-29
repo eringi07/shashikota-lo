@@ -3,9 +3,9 @@
     if(isset($_POST['datapost'])){
         //↑で送信ボタンが押された場合を示す
         try{
-          include 'dbc.php';
+            include 'dbc.php';
         } catch (PDOException $e) {
-          exit('データベース接続失敗。'.$e ->getMessage());
+            exit('データベース接続失敗。'.$e ->getMessage());
         }
         $stmt = $pdo -> prepare("INSERT INTO user(namae, mail, password) VALUES(:namae, :mail, :password)");//登録準備
         $stmt -> bindValue(':namae', $_POST['name'], PDO::PARAM_STR);//登録する文字の型を固定

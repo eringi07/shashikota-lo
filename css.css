@@ -3,288 +3,320 @@
 body,menu,ul,li,h1,h3,p,a{margin:0;padding:0;}
 
 body{font-family:'メイリオ',
-    'Hiragino Kaku Gothic Pro', sans-serif;
-    background-image: -webkit-radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), -webkit-radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
-    background-blend-mode: screen;
+  'Hiragino Kaku Gothic Pro', sans-serif;
+  background-image: -webkit-radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), -webkit-radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: screen;
 }
 
 a {color:#333;
-    text-decoration: none;
-    }
+  text-decoration: none;
+  }
 
 li {list-style-type:none;}
 
 .title_h1{margin:0;padding:0;
-      font-family:'メイリオ',
-      'Hiragino Kaku Gothic Pro', sans-serif;
-      color :#adff2f;
-      font-size: 35px;}
-.title_span{color:#8b4513 }
+  font-family:'メイリオ',
+  'Hiragino Kaku Gothic Pro', sans-serif;
+  color :#adff2f;
+  font-size: 35px;}
+
+.title_span{color:#8b4513}
+
 .main_come{margin-top:5px;
-          margin-bottom: 5px;
-          font-family:'メイリオ',
-            'Hiragino Kaku Gothic Pro', sans-serif;
-            font-size: 20px}
-.box1{background-color: white}
-.box2{
-      float: left;
-      word-break: break-word;
-      width: 100%;
+  margin-bottom: 5px;
+  font-family:'メイリオ',
+  'Hiragino Kaku Gothic Pro', sans-serif;
+  font-size: 20px;
 }
+
+.box1{background-color: white}
+
+.box2{float: left;
+  word-break: break-word;
+  width: 100%;
+}
+
 .box3{padding: 15px;
-font-size: 14px;
-position: absolute;
-margin-top:5%;
-left:25%;}
+  font-size: 14px;
+  position: absolute;
+  margin-top:5%;
+  left:25%;
+}
+
 .box1:after {content:"";
-              display:block;
-            clear:both}
+  display:block;
+  clear:both;
+}
 
 .main_img {margin:0;padding:0;
-            float:left;
-            width: 10%;
-            height: 70px;
-            background: url('img/camera_cat.png');
-            background-size: cover;
-          }
+  float:left;
+  width: 10%;
+  height: 70px;
+  background: url('img/camera_cat.png');
+  background-size: cover;
+}
+
 .title_h1 {padding: 10px ;
-            float:left;
-            width: 50%;
-            color: ;
-          }
+  float:left;
+  width: 50%;
+  color: ;
+}
+
 .yokoso{margin:0;padding:0;
-        float:right;
-        font-family:'メイリオ',
-        'Hiragino Kaku Gothic Pro', sans-serif;
-        color :#adff2f;
-        font-size: 20px;}
-.submit_button{
-                display: inline-block;
-                padding: 0.5em 1em;
-                text-decoration: none;
-                background: #668ad8;/*ボタン色*/
-                color: #FFF;
-                border-bottom: solid 4px #627295;
-                border-radius: 3px;
-            }
+  float:right;
+  font-family:'メイリオ',
+  'Hiragino Kaku Gothic Pro', sans-serif;
+  color :#adff2f;
+  font-size: 20px;
+}
+
+.submit_button{display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
 .submit_button{/*ボタンを押したとき*/
-                -ms-transform: translateY(4px);
-                -webkit-transform: translateY(4px);
-                transform: translateY(4px);/*下に動く*/
-                border-bottom: none;/*線を消す*/
-            }
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
 
-#branding{
-          width: 60%; /*横幅指定*/
-          margin-left: 20%; /*左端から20%右側に動かす*/
-          background-color: #313131; /*背景色の指定*/
-          overflow: hidden; /*おまじない*/
-        }
-#branding p{
-            color: #fff; /*文字色の変更*/
-            font-size: 120%; /*フォントサイズの調整*/
-            letter-spacing: 10px; /*文字と文字の間隔をあける*/
-            line-height: 300px; /*行間の指定（ブランディングの高さを決める）*/
-            padding-left: 3%; /*文字の左側に余白をあける*/
-        }
+#branding{width: 60%; /*横幅指定*/
+  margin-left: 20%; /*左端から20%右側に動かす*/
+  background-color: #313131; /*背景色の指定*/
+  overflow: hidden; /*おまじない*/
+}
+#branding p{color: #fff; /*文字色の変更*/
+  font-size: 120%; /*フォントサイズの調整*/
+  letter-spacing: 10px; /*文字と文字の間隔をあける*/
+  line-height: 300px; /*行間の指定（ブランディングの高さを決める）*/
+  padding-left: 3%; /*文字の左側に余白をあける*/
+}
 
- .menu {
-       	background: #f5f5f5;
-       	text-align:center;
-       }
+.menu {
+ 	background: #f5f5f5;
+ 	text-align:center;
+}
 
- .menu li{
-         	float: left;
-         	width: 20%;
-         	border-right: 0 solid #e6e4e4;
-         	border-bottom: 0 solid #e6e4e4;
-         	box-sizing: border-box;
-         }
+.menu li{
+ 	float: left;
+ 	width: 20%;
+ 	border-right: 0 solid #e6e4e4;
+ 	border-bottom: 0 solid #e6e4e4;
+ 	box-sizing: border-box;
+}
 
- .menu li:last-child {
-   	border-right: none;
+.menu li:last-child {
+ 	border-right: none;
  }
 
- .menu ul li a{
-    background:#adff2f;
-   	display: block;
-   	width: 100%;
-   	padding: 10px 0;
+.menu ul li a{
+  background:#adff2f;
+ 	display: block;
+ 	width: 100%;
+ 	padding: 10px 0;
 }
 
 .menu ul li a:hover {
-                     	background:#9acd32;
+  background:#9acd32;
 }
 
 .navigation{margin-top:0;
-          margin-bottom: 5px;
-          font-family:'メイリオ',
-          'Hiragino Kaku Gothic Pro', sans-serif;
-          font-size: 18px;
-          }
+  margin-bottom: 5px;
+  font-family:'メイリオ',
+  'Hiragino Kaku Gothic Pro', sans-serif;
+  font-size: 18px;
+}
+
 .section{
-    background-color: #9acd32;  /*背景色の指定*/
-    overflow: hidden;   /*おまじない*/
-    float: left;    /*フロートする*/
+  background-color: #9acd32;  /*背景色の指定*/
+  overflow: hidden;   /*おまじない*/
+  float: left;    /*フロートする*/
 }
+
 .date{
-    font-size: 60%; /*文字サイズの指定*/
-    color: yellowgreen;  /*文字色の指定*/
-    border: 1px solid yellowgreen;   /*線を描く*/
-    padding-top:3px;    /*文字上部の余白指定*/
-    padding-bottom: 3px;    /*文字下部の余白指定*/
-    padding-right: 6px; /*文字右側の余白指定*/
-    padding-left: 6px;  /*文字左側の余白指定*/
-    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
-    float: left;    /*フロートする*/
-}
-.dai1{
-    width: 100%;    /*横幅の指定*/
-    font-size: 30px;    /*フォントサイズの指定*/
-    color: #9acd32; /*文字色の変更*/
-    letter-spacing: 3px;    /*文字と文字の間隔をあける*/
-    padding-bottom:2px; /*文字下部の余白指定*/
-    padding-top: 10px; /*文字上部の余白指定*/
-
-    margin-bottom: 15px;    /*セクションタイトルの下に余白をつくる*/
-    float: left;    /*フロートする*/
+  font-size: 60%; /*文字サイズの指定*/
+  color: yellowgreen;  /*文字色の指定*/
+  border: 1px solid yellowgreen;   /*線を描く*/
+  padding-top:3px;    /*文字上部の余白指定*/
+  padding-bottom: 3px;    /*文字下部の余白指定*/
+  padding-right: 6px; /*文字右側の余白指定*/
+  padding-left: 6px;  /*文字左側の余白指定*/
+  letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+  float: left;    /*フロートする*/
 }
 
 .dai1{
-    font-size: 100%;    /*フォントサイズの指定*/
-    color: #9acd32; /*文字色の変更*/
-    letter-spacing: 3px;    /*文字と文字の間隔をあける*/
-    line-height: 200%;  /*行間をあける*/
-    margin-bottom: 50px;    /*文字とボタンの間をあける*/
-    float: left;    /*フロートする*/
+  width: 100%;    /*横幅の指定*/
+  font-size: 30px;    /*フォントサイズの指定*/
+  color: #9acd32; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  padding-bottom:2px; /*文字下部の余白指定*/
+  padding-top: 10px; /*文字上部の余白指定*/
+  margin-bottom: 15px;    /*セクションタイトルの下に余白をつくる*/
+  float: left;    /*フロートする*/
 }
+
+.dai1{
+  font-size: 100%;    /*フォントサイズの指定*/
+  color: #9acd32; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  line-height: 200%;  /*行間をあける*/
+  margin-bottom: 50px;    /*文字とボタンの間をあける*/
+  float: left;    /*フロートする*/
+}
+
 .btn{
-    color: #fff;    /*文字色の変更*/
-    background-color: yellowgreen;   /*背景色の指定*/
-    padding-top: 10px;  /*文字上部の余白を指定*/
-    padding-bottom: 10px;   /*文字下部の余白を指定*/
-    padding-right: 30px;    /*文字右側の余白を指定*/
-    padding-left: 30px; /*文字左側の余白を指定*/
-    border-radius: 5px; /*線の角を丸くする*/
-    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
-    text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
-    overflow: hidden;   /*おまじない*/
-    float: left;   /*フロートする*/
+  color: #fff;    /*文字色の変更*/
+  background-color: yellowgreen;   /*背景色の指定*/
+  padding-top: 10px;  /*文字上部の余白を指定*/
+  padding-bottom: 10px;   /*文字下部の余白を指定*/
+  padding-right: 30px;    /*文字右側の余白を指定*/
+  padding-left: 30px; /*文字左側の余白を指定*/
+  border-radius: 5px; /*線の角を丸くする*/
+  letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+  text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
+  overflow: hidden;   /*おまじない*/
+  float: left;   /*フロートする*/
 }
-.btn:hover{
-    background-color: #fff; /*背景色の指定*/
 
-    transition: 0.5s;   /*ホバー時の変化をなめらかに*/
-    color: yellowgreen;  /*文字色の指定*/
-    overflow: hidden;   /*おまじない*/
+.btn:hover{
+  background-color: #fff; /*背景色の指定*/
+
+  transition: 0.5s;   /*ホバー時の変化をなめらかに*/
+  color: yellowgreen;  /*文字色の指定*/
+  overflow: hidden;   /*おまじない*/
 }
+
 .img3 {
-    padding-top: 10px;
-    width: 100%;
-    height: 300px;
-    background: url("img/goukyu.jpg");
-    background-size: cover;
+  padding-top: 10px;
+  width: 100%;
+  height: 300px;
+  background: url("img/goukyu.jpg");
+  background-size: cover;
 }
+
 .img4{padding-top:10px;width: 100%;
-      height: 300px;
-      background: url('img/raimei.jpg');
-      background-size: cover;}
+  height: 300px;
+  background: url('img/raimei.jpg');
+  background-size: cover;
+}
 
 .box5{
   position:relative;
   left:30px;
-    padding: 20px;
-    height: 300px;
-    float: left;
-    width: 40%;
-    display: inline-block;
+  padding: 20px;
+  height: 300px;
+  float: left;
+  width: 40%;
+  display: inline-block;
 }
-            .box6 {position:relative;
-            left:30px;
-            padding: 20px;
-            height: 300px;
-            float: left;
-            width: 40%;
-            display: inline-block;}
+
+.box6 {position:relative;
+  left:30px;
+  padding: 20px;
+  height: 300px;
+  float: left;
+  width: 40%;
+  display: inline-block;
+}
+
 .upload-wrapper__odaiform{
   font-family:'メイリオ',
   'Hiragino Kaku Gothic Pro', sans-serif;
   font-size: 15px;
 }
+
 .upload-wrapper__odai{
   font-family:'メイリオ',
   'Hiragino Kaku Gothic Pro', sans-serif;
   font-size: 50px;
   float: left;
 }
+
 .upload-wrapper{
   margin:5px;
   position:relative;
   left:30px;
-    padding: 5px;
-    float: left;
-background:#c0c0c0;
-width: 50%;
-height: 100px;
+  padding: 5px;
+  float: left;
+  background:#c0c0c0;
+  width: 50%;
+  height: 100px;
 }
 
 .upload-wrapper__form{
   margin-left: 60%;
 }
 
-.idea-img{max-width: 30%;
-height:auto;
-float: left;
-display: inline-block;
-vertical-align:bottom
+.idea-img{
+  max-width: 30%;
+  height:auto;
+  float: left;
+  display: inline-block;
+  vertical-align:bottom
 }
-.upload-catch{padding: 15px;
-background-color:rgba(255,255,255,0.5);
-font-size: 14px;
-position: absolute;
-left:7%;
+
+.upload-catch{
+  padding: 15px;
+  background-color:rgba(255,255,255,0.5);
+  font-size: 14px;
+  position: absolute;
+  left:7%;
 }
+
 .upload-hint{position: relative;}
+
 .hint-img{
-    width: 100%;
+  width: 100%;
 }
+
 .main_container{
   display: inline-block;
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
 }
+
 .gallary-tag{
   width: 100%;
   padding: 5px 0;
   float: left;
   font-size: 1.4rem;
-background-color:#f0e68c}
+  background-color:#f0e68c}
 
 .gallary-wrapper{
-    margin-top: 50px;
-    margin-left: 5vw;
-    width: 34vw;
-    height: calc(34vw * 0.666);
-    display: inline-block;
+  margin-top: 50px;
+  margin-left: 5vw;
+  width: 34vw;
+  height: calc(34vw * 0.666);
+  display: inline-block;
 }
+
 .gallary-wrapper__day{
-    padding: 10px;
-    margin-left: 20%;
-    font-size: 12px;
-    position: absolute;
-    background-color:rgba(255,255,255,0.5);
+  padding: 10px;
+  margin-left: 20%;
+  font-size: 12px;
+  position: absolute;
+  background-color:rgba(255,255,255,0.5);
 }
 .gallary-wrapper__image{
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    float: left;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  float: left;
 }
-.gallary-wrapper__odai{padding: 10px;
-background-color:rgba(255,255,255,0.5);
-font-size: 20px;
-position: absolute;
-margin:0;
+
+.gallary-wrapper__odai{
+  padding: 10px;
+  background-color:rgba(255,255,255,0.5);
+  font-size: 20px;
+  position: absolute;
+  margin:0;
 }

@@ -11,7 +11,7 @@
           $stmt = $pdo -> prepare('SELECT * FROM kotaeshuu WHERE id=:id');
           $stmt -> bindValue(':id', $id, PDO::PARAM_INT);
           $stmt -> execute();
-          $odai["$id"] = $stmt -> fetch();
+          $odai[$id] = $stmt -> fetch();
     }
     if(isset($_POST['botan'])){
       if($_FILES['gazou']['size'] < 5 * 1024* 1024){
@@ -44,23 +44,23 @@
           お題から連想した画像を投稿しましょう！</p>
         </div>
         <?php for($i=1;$i<=3;$i++){ ?>
-          <div class= "upload-wrapper">
-            <p class="upload-wrapper__odaiform">
-              今日のお題 <?php echo $i ?>
-            </p>
-            <p class="upload-wrapper__odai">
-              <?php
-                echo $odai["$i"]["odai"];
-              ?>
-            </p>
-            <p class="upload-wrapper__up">
-            <form class="upload-wrapper__form" action='' method='post' enctype='multipart/form-data'>
-                <input type ="file" name = "gazou">
-                <input type ="hidden" name = "odai" value = "<?php echo $odai["$i"]["odai"];?>"><!-- type="hidden"でユーザーに見られる事なく、$_POSTで送信できる -->
-                <input class="submit_button" type="submit" name="botan" value="写真アップロード">
-            </form>
+        <div class= "upload-wrapper">
+          <p class="upload-wrapper__odaiform">
+            今日のお題 <?php echo $i ?>
           </p>
-          </div>
+          <p class="upload-wrapper__odai">
+            <?php
+              echo $odai["$i"]["odai"];
+            ?>
+          </p>
+          <p class="upload-wrapper__up">
+          <form class="upload-wrapper__form" action='' method='post' enctype='multipart/form-data'>
+              <input type ="file" name = "gazou">
+              <input type ="hidden" name = "odai" value = "<?php echo $odai["$i"]["odai"];?>"><!-- type="hidden"でユーザーに見られる事なく、$_POSTで送信できる -->
+              <input class="submit_button" type="submit" name="botan" value="写真アップロード">
+          </form>
+        </p>
+        </div>
         <?php } ?>
     </body>
 </html>
