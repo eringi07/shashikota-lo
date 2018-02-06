@@ -4,6 +4,10 @@
     ini_set('display_errors', "On");
     include 'dbc.php';
     include 'functions.php';
+    define("MY_EMAIL","example@co.com");
+    echo MY_EMAIL;
+    var_dump(__LINE__);
+    var_dump
     $stmt = $pdo->prepare("SELECT MAX(id) FROM kotae");
     $stmt->execute();
     $maxid = $stmt->fetch();
