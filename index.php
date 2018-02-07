@@ -7,7 +7,18 @@
     define("MY_EMAIL","example@co.com");
     echo MY_EMAIL;
     var_dump(__LINE__);
-    var_dump
+    var_dump(__FILE__);
+    $x = 10 % 3;
+    $x += 5;
+    var_dump($x);
+    $score = 40;
+    if ($score >80){
+      echo "great!";
+    }elseif($score > 60){
+      echo "good!";
+    }else{
+      echo "soso";
+    }
     $stmt = $pdo->prepare("SELECT MAX(id) FROM kotae");
     $stmt->execute();
     $maxid = $stmt->fetch();
